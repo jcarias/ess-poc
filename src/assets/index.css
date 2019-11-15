@@ -1,0 +1,30 @@
+@font-face {
+  font-family: "Cuprum";
+  src: local("Cuprum"), url("./fonts/Cuprum-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url("./fonts/Montserrat-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Nunito";
+  src: local("Nunito"), url("./fonts/Nunito-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "OpenSansCondensed";
+  src: local("OpenSansCondensed"),
+    url("./fonts/OpenSansCondensed-Light.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Raleway";
+  src: local("Raleway"), url("./fonts/Raleway-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Roboto";
+  src: local("Roboto"), url("./fonts/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "PTSans";
+  src: local("PTSans"), url("./fonts/PTSans-Regular.ttf") format("truetype");
+}

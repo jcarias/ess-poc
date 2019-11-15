@@ -1,25 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import ContractGenerator from "./containers/ContractGenerator";
+import FormBuilderContainer from "./containers/FormBuilderContainer";
+import FormContainer from "./containers/FormContainer";
+import ContractContainer from "./containers/ContractContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/form/:formId">
+          <FormContainer />
+        </Route>
+        <Route path="/template/:formId/contract/:contractId">
+          <ContractContainer />
+        </Route>
+        <Route path="/builder/:templateId" exact>
+          <FormBuilderContainer />
+        </Route>
+        <Route path="/builder/">
+          <FormBuilderContainer />
+        </Route>
+        <Route path="/">
+          <ContractGenerator />
+        </Route>
+      </Switch>
+    </Router>
   );
 }
 
